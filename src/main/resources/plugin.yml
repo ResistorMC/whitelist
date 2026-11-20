@@ -1,0 +1,22 @@
+name: whitelist
+version: '${version}'
+
+main: me.minecraft.resistor.whitelist.Whitelist
+api-version: 1.20
+load: STARTUP
+
+authors: [ Resistor ]
+
+commands:
+  wh:
+    description: whitelist
+    usage: /<command> add (nick)/del (nick)/info (nick)/list/reload/rest (nick period)
+    permission: whitelist.manage
+
+permissions:
+  whitelist.manage:
+    description: Управление белым списком
+    default: op
+
+
+
